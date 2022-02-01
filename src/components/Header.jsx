@@ -1,0 +1,20 @@
+export default function Header() {
+  return (
+    <header className="header">
+      <div className="header-logo">
+        <img src="../src/images/logo-mei.png" alt="mei" />
+      </div>
+      <nav className="header-navigation">
+        <ul className="nav-list">
+          <li>Home</li>
+          <li>Properties</li>
+          <li>About us </li>
+          <li>Services</li>
+          <li>Offices</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}

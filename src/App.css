@@ -7,12 +7,6 @@ img {
   width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,21 +18,12 @@ img {
   color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  background-color: rgb(120, 120, 172);
-
+  background-color: #aaa69e;
+  width: 100vw;
   padding: 20px;
 }
 .header-logo {
@@ -60,6 +45,12 @@ header {
   gap: 20px;
   color: white;
 }
+.background-image {
+  background-image: url(https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
 main {
   display: grid;
   align-items: center;
@@ -101,18 +92,37 @@ main {
 }
 .listof-properties {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 20px;
   place-items: center;
 }
 .listof-properties li {
   list-style: none;
-  outline: 1px solid black;
+  outline: 1px solid rgb(151, 150, 150);
+  display: grid;
 }
 .properties-list img {
   width: 350px;
   background-position: center;
   background-size: cover;
+}
+.property-specification {
+  display: grid;
+  grid-auto-flow: column;
+  margin-left: 10px;
+}
+.property-specification img {
+  width: 20px;
+  padding-top: 15px;
+}
+
+.property-specification span {
+  display: grid;
+  grid-template-columns: 30px 30px;
+}
+.property-data {
+  padding: 15px;
+  color: #1f94a7;
 }
 footer {
   background-color: #292f32;
