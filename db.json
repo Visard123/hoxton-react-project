@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "name": "Visard",
+      "username": "v.koleci",
+      "password": 1234
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "electronics" },
+    { "id": 2, "name": "jewelery" },
+    { "id": 3, "name": "men's clothing" },
+    { "id": 4, "name": "women's clothing" }
+  ],
+  "properties": [
+    {
+      "category_Id": 1,
+      "title": "Apartment for sale",
+      "price": 120000,
+      "currency": "EUR",
+      "description": "hdsjhdsdkjdsjksdnsjdssdh",
+      "location": "qender",
+      "city": "Tirana",
+      "image": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+      "surface": "120m",
+      "rooms": "2",
+      "bathrooms": "1",
+      "status": "For sale"
+    }
+  ]
+}

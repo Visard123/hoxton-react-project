@@ -12,7 +12,7 @@ function App() {
           <img src="../src/images/logo-mei.png" alt="mei" />
         </div>
         <nav className="header-navigation">
-          <ul>
+          <ul className="nav-list">
             <li>Home</li>
             <li>Properties</li>
             <li>About us </li>
@@ -25,12 +25,15 @@ function App() {
       </header>
 
       <main className="main">
-        <div className="Searching-form ">
-          Search for Properties
-          <form action="">
-            <input type="text" placeholder="Reference" />
+        <div className="searching-form ">
+          <h2>Search for Properties </h2>
+          <form action="" className="form-elements">
+            <div className="reference-input">
+              <h3>Property ID</h3>
+              <input type="text" placeholder="Reference" />
+            </div>
             <div className="property-type">
-              Poperty type
+              <h3>Property Type </h3>
               <select name="" id="">
                 {" "}
                 <option value="1">Apartment</option>
@@ -42,15 +45,15 @@ function App() {
               </select>
             </div>
             <div className="property-type">
-              Status
+              <h3>Status </h3>
               <select name="" id="">
                 {" "}
-                <option value="1">For Sale</option>
+                <option value="1"> For Sale</option>
                 <option value="2">For Rent</option>
               </select>
             </div>
             <div className="property-type">
-              Rooms
+              <h3>Rooms </h3>
               <select name="" id="">
                 {" "}
                 <option value="1">1</option>
@@ -62,7 +65,7 @@ function App() {
               </select>
             </div>
             <div className="property-type">
-              City
+              <h3>City </h3>
               <select name="" id="">
                 {" "}
                 <option value="1">Tirana</option>
@@ -74,7 +77,7 @@ function App() {
               </select>
             </div>
             <div className="property-type">
-              Zone
+              <h3>Zone</h3>
               <select name="" id="">
                 {" "}
                 <option value="1">Rruga Durresit</option>
@@ -85,23 +88,99 @@ function App() {
                 <option value="6">Gjiri Lalezit</option>
               </select>
             </div>
+            <button type="submit">Search</button>
           </form>
         </div>
 
         <div className="properties-list">
-          <ul>
-            <li>ap1 </li>
-            <li>ap2</li>
-            <li>ap3</li>
-            <li>ap4</li>
-            <li>ap5</li>
-            <li>ap6</li>
-            <li>ap7</li>
-            <li>ap8</li>
-            <li>ap9</li>
+          <ul className="listof-properties">
+            <li>
+              <div className="property-elements">
+                <img
+                  src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt="apartment"
+                />
+                <div className="property-specification">
+                  <img src="" alt="img" />
+                  <img src="" alt="img " />
+                  <img src="" alt="img" />
+                </div>
+              </div>
+              <div>
+                <h2>Title</h2>
+              </div>
+              <div>
+                <h2>location</h2>
+                <p>Price</p>
+              </div>
+            </li>
+            <li>
+              <div className="property-elements">
+                <img
+                  src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt="apartment"
+                />
+                <div className="property-specification"></div>
+              </div>
+            </li>
+            <li>
+              <div className="property-elements">
+                <img
+                  src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt="apartment"
+                />
+                <div className="property-specification"></div>
+              </div>
+            </li>
+            <li>
+              <div className="property-elements">
+                <img
+                  src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt="apartment"
+                />
+                <div className="property-specification"></div>
+              </div>
+            </li>
+            <li>
+              <div className="property-elements">
+                <img
+                  src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt="apartment"
+                />
+                <div className="property-specification"></div>
+              </div>
+            </li>
+            <li>
+              <div className="property-elements">
+                <img
+                  src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt="apartment"
+                />
+                <div className="property-specification"></div>
+              </div>
+            </li>
           </ul>
         </div>
       </main>
+      <footer>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          blanditiis adipisci atque, voluptas in, aspernatur nesciunt quam,
+          dignissimos accusamus unde harum natus ipsa voluptates voluptatum?
+          Impedit, quaerat qui! Vitae, neque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          labore provident iste excepturi eveniet consequuntur ut doloremque
+          nostrum cum minima deleniti aspernatur, delectus nulla mollitia ipsum
+          earum quisquam dignissimos rerum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quidem
+          vel hic ratione quam? Hic suscipit quia, ullam nostrum deleniti dicta,
+          ad odit ab, ipsam aspernatur soluta recusandae voluptatum magni.
+        </p>
+      </footer>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,10 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,6 +33,87 @@
   }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: rgb(120, 120, 172);
+
+  padding: 20px;
+}
+.header-logo {
+  padding-left: 100px;
+  width: 200px;
+  height: 100px;
+}
+.nav-list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 30px;
+  padding-right: 100px;
+}
+.nav-list li {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  color: white;
+}
+main {
+  display: grid;
+  align-items: center;
+  background-color: #1f94a7;
+}
+.searching-form h2 {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.form-elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  align-content: center;
+  align-items: center;
+  place-items: center;
+  color: white;
+  gap: 10px;
+
+  padding: 20px;
+}
+.form-elements select {
+  width: 300px;
+  height: 40px;
+  gap: 10px;
+}
+.reference-input input {
+  width: 300px;
+  height: 35px;
+}
+.form-elements button {
+  width: 300px;
+  height: 40px;
+}
+.properties-list {
+  background-color: white;
+  display: grid;
+}
+.listof-properties {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  place-items: center;
+}
+.listof-properties li {
+  list-style: none;
+  outline: 1px solid black;
+}
+.properties-list img {
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+}
+footer {
+  background-color: #292f32;
 }
