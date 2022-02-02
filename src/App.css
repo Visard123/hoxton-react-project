@@ -86,6 +86,14 @@ main {
   width: 300px;
   height: 40px;
 }
+
+.reset-button {
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  left: 855px;
+  top: 1500px;
+}
 .properties-list {
   background-color: white;
   display: grid;
@@ -126,4 +134,9 @@ main {
 }
 footer {
   background-color: #292f32;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
 }

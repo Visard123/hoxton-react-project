@@ -85,9 +85,12 @@ export default function SearchForm(props) {
             <option value="Drimadhes">Drimadhes</option>
           </select>
         </div>
+
         <button type="submit">Search</button>
       </form>
-      <button onClick={props.resetFilters}>Reset</button>
+      <button className="reset-button" onClick={props.resetFilters}>
+        Show All Properties
+      </button>
     </div>
   );
 }

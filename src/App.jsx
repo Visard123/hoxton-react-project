@@ -1,8 +1,18 @@
 import { useEffect, useState } from "react";
+import { Link, Navigate, Route, Routes } from "react-router-dom";
 
 import "./App.css";
+import BackgroundImage from "./components/BackgroundImage";
 import Header from "./components/Header";
+import Properties from "./components/Properties";
 import SearchForm from "./components/Search-Form";
+import About from "./pages/About";
+import AllProperties from "./pages/AllProperties";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact.jsx";
+import Home from "./pages/Home";
+import Offices from "./pages/Offices";
+import Property from "./pages/Property";
 
 function App() {
   const [properties, setProperties] = useState([]);
@@ -38,69 +48,30 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section>
-        <div className="background-image">
-          <img
-            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            alt="villa"
-          />
-        </div>
-      </section>
-      <main className="main">
-        <SearchForm
-          handlePropertyFilter={handlePropertyFilter}
-          resetFilters={resetFilters}
+
+      <Routes>
+        <Route index element={<Navigate to="/home" />} />
+        <Route
+          path="/home"
+          element={
+            <Home
+              handlePropertyFilter={handlePropertyFilter}
+              resetFilters={resetFilters}
+              properties={properties}
+            />
+          }
         />
-        <div className="properties-list">
-          <ul className="listof-properties">
-            {properties.map((property) => (
-              <li key={property.id}>
-                <div className="property-elements">
-                  <img src={property.image} alt={property.title} />
-                  <div className="property-specification">
-                    <span>
-                      {" "}
-                      <img
-                        src="../src/images/surface.svg 
-                    "
-                        alt="img "
-                      />
-                      <p>{property.surface}</p>
-                    </span>
-                    <span>
-                      <img
-                        src="../src/images/bedroom.svg 
-                    "
-                        alt="img"
-                      />
-                      <p>{property.rooms}</p>
-                    </span>
-                    <span>
-                      <img
-                        src="../src/images/bathroom.svg 
-                    "
-                        alt="img"
-                      />
-                      <p>{property.bathrooms}</p>
-                    </span>
-                  </div>
-                </div>
-                <div className="property-data">
-                  <div>
-                    <h2>{property.title}</h2>
-                  </div>
-                  <div>
-                    <h2>
-                      {property.city}, {property.location}
-                    </h2>
-                    <p>€{property.price}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </main>
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/offices" element={<Offices />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route
+          path="/properties"
+          element={<AllProperties properties={properties} />}
+        />
+        <Route path="/properties/:id" element={<Property />} />
+      </Routes>
+
       <footer>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
