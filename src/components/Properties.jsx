@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import Agents from "./Agents";
 
 export default function Properties(props) {
   return (
     <div className="properties-list">
+      <h1 className="property-list">List of Properties</h1>
       <ul className="listof-properties">
         {props.properties.map((property) => (
           <Link to={`/properties/${property.id}`}>

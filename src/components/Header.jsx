@@ -1,38 +1,38 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className="header">
-      <Link to={`/home`}>
+      <NavLink to={`/home`}>
         {" "}
         <div className="header-logo">
           <img src="../src/images/logo-mei.png" alt="mei" />
         </div>
-      </Link>
+      </NavLink>
       <nav className="header-navigation">
         <ul className="nav-list">
           <li>
             {" "}
-            <Link to={`/home`}> Home </Link>
+            <NavLink to={`/home`}> Home </NavLink>
           </li>
           <li>
             {" "}
-            <Link to={`/properties`}> Properties</Link>
+            <NavLink to={`/properties`}> Properties</NavLink>
           </li>
           <li>
-            <Link to={`/about`}> About us</Link>{" "}
+            <NavLink to={`/about`}> About us</NavLink>{" "}
           </li>
           <li>
-            <Link to={`/services`}> Services</Link>
+            <NavLink to={`/services`}> Services</NavLink>
           </li>
           <li>
-            <Link to={`/offices`}> Offices</Link>
+            <NavLink to={`/offices`}> Offices</NavLink>
           </li>
           <li>
-            <Link to={`/blog`}> Blog</Link>
+            <NavLink to={`/blog`}> Blog</NavLink>
           </li>
           <li>
-            <Link to={`/contact`}> Contact</Link>
+            <NavLink to={`/contact`}> Contact</NavLink>
           </li>
         </ul>
       </nav>

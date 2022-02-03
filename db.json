@@ -1,10 +1,24 @@
 {
   "users": [
     {
-      "name": "Visard",
-      "surname": "Koleci",
+      "name": "Ilir",
+      "surname": "Floriri",
       "username": "v.koleci",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Ilir_Meta_%28portrait%29.jpg/422px-Ilir_Meta_%28portrait%29.jpg",
+      "password": 1234
+    },
+    {
+      "name": "Lulzim",
+      "surname": "Brava",
+      "username": "v.koleci",
+      "image": "https://pd.al/wp-content/uploads/2017/12/Lulzim-Basha-fb_2-786x1024-230x300.jpg",
+      "password": 1234
+    },
+    {
+      "name": "Edvin",
+      "surname": "Rama",
+      "username": "v.koleci",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Edi_Rama_%28portret%29.jpg",
       "password": 1234
     }
   ],
@@ -57,7 +71,7 @@
       "title": "Comercial for rent",
       "price": 5000,
       "currency": "EUR",
-      "description": "hdsjhdsdkjdsjksdnsjdssdh",
+      "description": "Vila ndodhet ne Qerret, nje nga zonat me te preferuara dhe me te qeta te qytetit. Ka nje siperfaqe trualli prej 300 m2 dhe eshte e ndare ne dy kate. Kati i pare me siperfaqe 90 m2 eshte i organizuar ne nje dhome ndenje se bashku me kendin e kuzhines, nje dhome gjumi, nje tualet, nje depo dhe nje verande. Ndersa kati i dyte me siperfaqe 75 m2 eshte i organizuar ne dy dhoma gjumi, nje tualet dhe nje ballkon. Vila ka nje mobilim cilesor dhe ofron te gjitha komoditetet per nje jetese te mire. Oborri perreth viles eshte i rrethuar me peme dekorative dhe gjelberim. Disponon dokumentacion te rregullt hipotekor. Per nje vizite ne prone apo ne prona te ngjashme na kontaktoni",
       "location": "Porti",
       "city": "Durres",
       "image": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
@@ -74,7 +88,7 @@
       "title": "Land for sale",
       "price": 4000000,
       "currency": "EUR",
-      "description": "hdsjhdsdkjdsjksdnsjdssdh",
+      "description": "Shitet Tokë 3050 m2 Në Autostradën Durrës-Tiranë Km 7 . Eshte me dokumenta te rregullta. Cmimi eshte 143.000 euro. Toka ndodhet ne nje zone teper te favorshme per cdolloj ndertimi. Per me shume informacione kontakto ne numrin",
       "location": "Drimadhes",
       "city": "Vlora",
       "image": "https://images.unsplash.com/photo-1494187570835-b188e7f0f26e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -91,7 +105,7 @@
       "title": "Industrial for sale",
       "price": 12000000,
       "currency": "EUR",
-      "description": "hdsjhdsdkjdsjksdnsjdssdh",
+      "description": "Vila ndodhet ne Qerret, nje nga zonat me te preferuara dhe me te qeta te qytetit. Ka nje siperfaqe trualli prej 300 m2 dhe eshte e ndare ne dy kate. Kati i pare me siperfaqe 90 m2 eshte i organizuar ne nje dhome ndenje se bashku me kendin e kuzhines, nje dhome gjumi, nje tualet, nje depo dhe nje verande. Ndersa kati i dyte me siperfaqe 75 m2 eshte i organizuar ne dy dhoma gjumi, nje tualet dhe nje ballkon. Vila ka nje mobilim cilesor dhe ofron te gjitha komoditetet per nje jetese te mire. Oborri perreth viles eshte i rrethuar me peme dekorative dhe gjelberim. Disponon dokumentacion te rregullt hipotekor. Per nje vizite ne prone apo ne prona te ngjashme na kontaktoni",
       "location": "Vore",
       "city": "Tirana",
       "image": "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -108,10 +122,10 @@
       "title": "Restaurant for rent",
       "price": 6000,
       "currency": "EUR",
-      "description": "hdsjhdsdkjdsjksdnsjdssdh",
+      "description": "Vila ndodhet ne Qerret, nje nga zonat me te preferuara dhe me te qeta te qytetit. Ka nje siperfaqe trualli prej 300 m2 dhe eshte e ndare ne dy kate. Kati i pare me siperfaqe 90 m2 eshte i organizuar ne nje dhome ndenje se bashku me kendin e kuzhines, nje dhome gjumi, nje tualet, nje depo dhe nje verande. Ndersa kati i dyte me siperfaqe 75 m2 eshte i organizuar ne dy dhoma gjumi, nje tualet dhe nje ballkon. Vila ka nje mobilim cilesor dhe ofron te gjitha komoditetet per nje jetese te mire. Oborri perreth viles eshte i rrethuar me peme dekorative dhe gjelberim. Disponon dokumentacion te rregullt hipotekor. Per nje vizite ne prone apo ne prona te ngjashme na kontaktoni",
       "location": "Port",
       "city": "Saranda",
-      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+      "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "surface": "300m",
       "rooms": "5",
       "bathrooms": "2",
