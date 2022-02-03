@@ -3,6 +3,7 @@ import { Link, Navigate, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 import BackgroundImage from "./components/BackgroundImage";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Properties from "./components/Properties";
 import SearchForm from "./components/Search-Form";
@@ -72,25 +73,7 @@ function App() {
         <Route path="/properties/:id" element={<Property />} />
       </Routes>
 
-      <footer>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-          blanditiis adipisci atque, voluptas in, aspernatur nesciunt quam,
-          dignissimos accusamus unde harum natus ipsa voluptates voluptatum?
-          Impedit, quaerat qui! Vitae, neque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          labore provident iste excepturi eveniet consequuntur ut doloremque
-          nostrum cum minima deleniti aspernatur, delectus nulla mollitia ipsum
-          earum quisquam dignissimos rerum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quidem
-          vel hic ratione quam? Hic suscipit quia, ullam nostrum deleniti dicta,
-          ad odit ab, ipsam aspernatur soluta recusandae voluptatum magni.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

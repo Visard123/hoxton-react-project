@@ -23,7 +23,7 @@ header {
   grid-template-columns: 1fr auto;
   align-items: center;
   background-color: #aaa69e;
-  width: 100vw;
+
   padding: 20px;
 }
 .header-logo {
@@ -44,7 +44,17 @@ header {
   grid-auto-flow: column;
   gap: 20px;
   color: white;
+  font-size: 18px;
+  font-weight: bold;
 }
+.nav-list li :hover {
+  color: #1f94a7;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
 .background-image {
   background-image: url(https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
   background-position: center;
@@ -86,29 +96,36 @@ main {
   width: 300px;
   height: 40px;
 }
-
+.searching-form {
+  position: relative;
+}
 .reset-button {
   width: 300px;
   height: 40px;
   position: absolute;
-  left: 855px;
-  top: 1500px;
+  bottom: 20px;
+  right: 195px;
 }
 .properties-list {
   background-color: white;
   display: grid;
 }
+
 .listof-properties {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 20px;
   place-items: center;
 }
+.listof-properties a {
+  text-decoration: none;
+}
 .listof-properties li {
   list-style: none;
   outline: 1px solid rgb(151, 150, 150);
   display: grid;
 }
+
 .properties-list img {
   width: 350px;
   background-position: center;
@@ -132,11 +149,71 @@ main {
   padding: 15px;
   color: #1f94a7;
 }
-footer {
-  background-color: #292f32;
+.property-elements {
+  position: relative;
+}
+.property-status {
+  position: absolute;
+  top: -16px;
+  right: 0px;
+  background-color: #1f94a7;
+  padding: 10px;
+  color: white;
 }
 
-.nav-list a {
+.property-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+  padding: 20px;
+}
+.general-details {
+  display: grid;
+  grid-auto-flow: column;
+  color: #77858e;
+}
+.property-details img {
+  width: 800px;
+}
+
+.property-details li {
+  list-style: none;
+}
+.our-agents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+
+footer {
+  background-color: #292f32;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+.mei-image {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+.mei-image img {
+  width: 200px;
+  height: 100px;
+}
+.footer-list {
+  display: grid;
+  gap: 10px;
+}
+.footer-list li {
+  list-style: none;
+}
+.footer-list a {
   text-decoration: none;
   color: white;
+}
+.footer-list li :hover {
+  color: #1f94a7;
 }

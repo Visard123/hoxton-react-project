@@ -2,7 +2,9 @@
   "users": [
     {
       "name": "Visard",
+      "surname": "Koleci",
       "username": "v.koleci",
+      "image": "",
       "password": 1234
     }
   ],
@@ -21,14 +23,16 @@
       "title": "Apartment for sale",
       "price": 120000,
       "currency": "EUR",
-      "description": "hdsjhdsdkjdsjksdnsjdssdh",
+      "description": "Shitet apartament 2+1 ne Qender ne nje pallati te ri me ashensor. Apartamenti organizohet ne sallon ndenje, 2 dhoma, 2 tualete, ballkon. Apartamenti ndodhet ne nje nga zonat me te kerkuara te qytetit ku te ofron te gjitha lehtesirat per nje jete sa me komode. Orientimi i apartamentit eshte Lindje, disponon dokumentacion te plote hipotekor. Per me shume informacione per nje vizite ne kete prone ose prona te ngjashme kontaktoni tani Glediusin ne numrin",
       "location": "Center",
       "city": "Tirana",
       "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "surface": "120m",
       "rooms": "2",
       "bathrooms": "1",
-      "status": "For sale"
+      "status": "For sale",
+      "floor": "5",
+      "mortgage": "Yes"
     },
     {
       "id": 2,
@@ -36,14 +40,16 @@
       "title": "Villa for sale",
       "price": 1500000,
       "currency": "EUR",
-      "description": "hdsjhdsdkjdsjksdnsjdssdh",
+      "description": "Vila ndodhet ne Qerret, nje nga zonat me te preferuara dhe me te qeta te qytetit. Ka nje siperfaqe trualli prej 300 m2 dhe eshte e ndare ne dy kate. Kati i pare me siperfaqe 90 m2 eshte i organizuar ne nje dhome ndenje se bashku me kendin e kuzhines, nje dhome gjumi, nje tualet, nje depo dhe nje verande. Ndersa kati i dyte me siperfaqe 75 m2 eshte i organizuar ne dy dhoma gjumi, nje tualet dhe nje ballkon. Vila ka nje mobilim cilesor dhe ofron te gjitha komoditetet per nje jetese te mire. Oborri perreth viles eshte i rrethuar me peme dekorative dhe gjelberim. Disponon dokumentacion te rregullt hipotekor. Per nje vizite ne prone apo ne prona te ngjashme na kontaktoni.",
       "location": "Teg",
       "city": "Tirana",
       "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "surface": "520m",
       "rooms": "6",
       "bathrooms": "3",
-      "status": "For sale"
+      "status": "For sale",
+      "floor": "0",
+      "mortgage": "Yes"
     },
     {
       "id": 3,
@@ -58,7 +64,9 @@
       "surface": "2000m",
       "rooms": "4",
       "bathrooms": "2",
-      "status": "For rent"
+      "status": "For rent",
+      "floor": "0",
+      "mortgage": "No"
     },
     {
       "id": 4,
@@ -73,7 +81,9 @@
       "surface": "4000m",
       "rooms": "0",
       "bathrooms": "0",
-      "status": "For sale"
+      "status": "For sale",
+      "floor": "",
+      "mortgage": "Yes"
     },
     {
       "id": 5,
@@ -88,7 +98,9 @@
       "surface": "12000m",
       "rooms": "2",
       "bathrooms": "4",
-      "status": "For sale"
+      "status": "For sale",
+      "floor": "0",
+      "mortgage": "Yes"
     },
     {
       "id": 6,
@@ -103,7 +115,9 @@
       "surface": "300m",
       "rooms": "5",
       "bathrooms": "2",
-      "status": "For rent"
+      "status": "For rent",
+      "floor": "0",
+      "mortgage": "No"
     }
   ]
 }
