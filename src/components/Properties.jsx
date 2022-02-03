@@ -9,6 +9,7 @@ export default function Properties(props) {
             <li key={property.id}>
               <div className="property-elements">
                 <img src={property.image} alt={property.title} />
+                <p className="property-status">{property.status}</p>
                 <div className="property-specification">
                   <span>
                     {" "}

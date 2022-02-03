@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="header">
-      <div className="header-logo">
-        <img src="../src/images/logo-mei.png" alt="mei" />
-      </div>
+      <Link to={`/home`}>
+        {" "}
+        <div className="header-logo">
+          <img src="../src/images/logo-mei.png" alt="mei" />
+        </div>
+      </Link>
       <nav className="header-navigation">
         <ul className="nav-list">
           <li>
