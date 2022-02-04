@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "id": 1,
       "name": "Ilir",
       "surname": "Floriri",
       "username": "v.koleci",
@@ -8,6 +9,7 @@
       "password": 1234
     },
     {
+      "id": 2,
       "name": "Lulzim",
       "surname": "Brava",
       "username": "v.koleci",
@@ -15,6 +17,7 @@
       "password": 1234
     },
     {
+      "id": 3,
       "name": "Edvin",
       "surname": "Rama",
       "username": "v.koleci",
@@ -33,6 +36,7 @@
   "properties": [
     {
       "id": 1,
+      "user_Id": 1,
       "category_Id": 1,
       "title": "Apartment for sale",
       "price": 120000,
@@ -50,6 +54,7 @@
     },
     {
       "id": 2,
+      "user_Id": 3,
       "category_Id": 2,
       "title": "Villa for sale",
       "price": 1500000,
@@ -67,6 +72,7 @@
     },
     {
       "id": 3,
+      "user_Id": 2,
       "category_Id": 3,
       "title": "Comercial for rent",
       "price": 5000,
@@ -84,6 +90,7 @@
     },
     {
       "id": 4,
+      "user_Id": 1,
       "category_Id": 4,
       "title": "Land for sale",
       "price": 4000000,
@@ -101,6 +108,7 @@
     },
     {
       "id": 5,
+      "user_Id": 2,
       "category_Id": 5,
       "title": "Industrial for sale",
       "price": 12000000,
@@ -118,6 +126,7 @@
     },
     {
       "id": 6,
+      "user_Id": 3,
       "category_Id": 6,
       "title": "Restaurant for rent",
       "price": 6000,

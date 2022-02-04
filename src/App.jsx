@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, Navigate, Route, Routes } from "react-router-dom";
 
 import "./App.css";
+import Agent from "./components/Agent";
 import BackgroundImage from "./components/BackgroundImage";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -71,6 +72,7 @@ function App() {
           element={<AllProperties properties={properties} />}
         />
         <Route path="/properties/:id" element={<Property />} />
+        <Route path="/users/:id" element={<Agent />} />
       </Routes>
 
       <Footer />

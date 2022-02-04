@@ -7,8 +7,8 @@ export default function Properties(props) {
       <h1 className="property-list">List of Properties</h1>
       <ul className="listof-properties">
         {props.properties.map((property) => (
-          <Link to={`/properties/${property.id}`}>
-            <li key={property.id}>
+          <Link key={property.id} to={`/properties/${property.id}`}>
+            <li>
               <div className="property-elements">
                 <img src={property.image} alt={property.title} />
                 <p className="property-status">{property.status}</p>

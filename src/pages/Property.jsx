@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Property() {
   const params = useParams();
   const [prona, setProna] = useState(null);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:4000/properties/${params.id}`)
@@ -11,9 +12,18 @@ export default function Property() {
       .then((pronaFromServer) => setProna(pronaFromServer));
   }, []);
 
+  useEffect(() => {
+    if (prona) {
+      fetch(`http://localhost:4000/users/${prona.user_Id}`)
+        .then((resp) => resp.json())
+        .then((agentFromServer) => setUser(agentFromServer));
+    }
+  }, [prona]);
+
   if (prona === null) {
     return <h2>Loading...</h2>;
   }
+
   return (
     <div className="property-details">
       <div>
@@ -43,20 +53,23 @@ export default function Property() {
           </ul>
         </div>
       </div>
-      <div>
-        <div className="agent-wrapper">
-          <h2>Property Broker</h2>
-          <ul className="our-agent">
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Ilir_Meta_%28portrait%29.jpg/422px-Ilir_Meta_%28portrait%29.jpg"
-                alt="ilir"
-              />
-              <p>Ilir Meta</p>
-            </li>
-          </ul>
+      {user ? (
+        <div>
+          <div className="agent-wrapper">
+            <h2>Property Broker</h2>
+            <ul className="our-agent">
+              <li>
+                <Link to={`/users/${user.id}`}>
+                  <img src={user.image} alt={user.name} />
+                  <p>
+                    {user.name} {user.surname}
+                  </p>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 }

@@ -25,7 +25,7 @@ header {
   grid-template-columns: 1fr auto;
   align-items: center;
   /* background-color: #aaa69e; */
-  background-color: white;
+  background-color: rgb(224, 223, 223);
   padding: 20px;
 }
 .header-logo {

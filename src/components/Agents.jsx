@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import { useState } from "react/cjs/react.development";
 
@@ -16,10 +17,12 @@ export default function Agents() {
       <ul className="our-agents">
         {users.map((agent) => (
           <li key={agent.id}>
-            <img src={agent.image} alt={agent.name} />
-            <p>
-              {agent.name} {agent.surname}
-            </p>
+            <Link to={`/users/${agent.id}`}>
+              <img src={agent.image} alt={agent.name} />
+              <p>
+                {agent.name} {agent.surname}
+              </p>
+            </Link>
           </li>
         ))}
       </ul>

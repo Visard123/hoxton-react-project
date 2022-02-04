@@ -1,3 +1,3 @@
 export default function About() {
-  return <li>aha</li>;
+  return <li>Under Construction</li>;
 }
