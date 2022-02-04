@@ -64,6 +64,7 @@ export default function Property() {
                   <p>
                     {user.name} {user.surname}
                   </p>
+                  <p>Phone: {user.phone}</p>
                 </Link>
               </li>
             </ul>

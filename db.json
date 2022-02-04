@@ -6,23 +6,28 @@
       "surname": "Floriri",
       "username": "v.koleci",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Ilir_Meta_%28portrait%29.jpg/422px-Ilir_Meta_%28portrait%29.jpg",
-      "password": 1234
+      "password": 1234,
+      "phone": "09009090220"
     },
+
     {
       "id": 2,
       "name": "Lulzim",
       "surname": "Brava",
       "username": "v.koleci",
       "image": "https://pd.al/wp-content/uploads/2017/12/Lulzim-Basha-fb_2-786x1024-230x300.jpg",
-      "password": 1234
+      "password": 1234,
+      "phone": "09009090221"
     },
+
     {
       "id": 3,
       "name": "Edvin",
       "surname": "Rama",
       "username": "v.koleci",
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Edi_Rama_%28portret%29.jpg",
-      "password": 1234
+      "password": 1234,
+      "phone": "09009090222"
     }
   ],
   "categories": [

@@ -31,7 +31,10 @@ export default function Agent() {
 
   return (
     <div>
-      <div>{user.name + " " + user.surname}</div>
+      {/* <div className="agent-property">
+        <img src={user.image} alt={user.name} style={{ width: "200px" }} />
+        <p>{user.name + " " + user.surname}</p>
+      </div> */}
       {properties ? <Properties properties={properties} /> : null}
     </div>
   );
